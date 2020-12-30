@@ -3,8 +3,8 @@ $user = $_POST['user'];
 $pass = $_POST['pass'];
 
 if($user === '' || $pass === ''){
-    echo json_encode(1);
+    echo json_encode('invalido');
 }else{
-    echo json_encode(2);
+    echo json_encode('valido');
 }
 ?>
