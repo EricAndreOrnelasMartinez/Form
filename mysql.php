@@ -3,5 +3,5 @@ include('class.php');
 
 $con = conectar();
 
-echo "CONECTADO!!"
+echo "CONECTADO!!";
 
