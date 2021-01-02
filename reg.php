@@ -9,7 +9,7 @@ if(isset($_POST['reg'])){
         $consulta = "INSERT INTO Info(Nombre,Email) VALUES('$nombre', '$mail')";
         $resultado = mysqli_query($con,$consulta);
         $valido = "";
-        echo $valido;
+        echo $resultado;
         if($resultado){
             ?>
             <h3 class="ok">registrado!!!!</h3>
