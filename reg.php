@@ -38,5 +38,25 @@ if(isset($_POST['reg'])){
     <title>Validado</title>
 </head>
 <body>
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>Nombre</td>
+            <td>Mail</td>
+        </tr>
+        <?php 
+        $sql = "SELECT * FROM Info";
+        $ack = mysqli_query($con, $sql);
+        while($mostrar =mysqli_fetch_array($resultado)){
+        ?>
+        <tr>
+        <td><?php echo $mostrar['ID']; ?></td>
+        <td><?php echo $mostrar['Nombre']; ?></td>
+        <td><?php echo $mostrar['Email']; ?></td>
+        </tr>
+        <?php 
+        }
+        ?>
+    </table>
 </body>
 </html>
