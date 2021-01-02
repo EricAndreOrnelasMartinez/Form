@@ -13,8 +13,5 @@
         <input type="email" name="mail" id="2" placeholder="Email">
         <input type="submit" name="reg" value="Enviar">
     </form>
-    <?php
-    include("reg.php");
-    ?>
 </body>
 </html>
