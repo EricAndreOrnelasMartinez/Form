@@ -8,13 +8,16 @@ if(isset($_POST['reg'])){
         $mail = trim($_POST['mail']);
         $consulta = "INSERT INTO Info(Nombre,Email) VALUES('$nombre', '$mail')";
         $resultado = mysqli_query($con,$consulta);
+        $valido = "";
         if($resultado){
             ?>
             <h3 class="ok">registrado!!!!</h3>
+            $valido = "Correcto!!";
             <?php
         }else {
             ?>
             <h3 class="bad">algo salió mal :(</h3>
+            $valido = "incorrecto "";
             <?php
         }
     }
@@ -30,7 +33,7 @@ if(isset($_POST['reg'])){
     <title>Validado</title>
 </head>
 <body>
-
+    <h3 class="ok"><?php $valido ?></h3>
     
 </body>
 </html>
