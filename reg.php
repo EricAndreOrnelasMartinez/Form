@@ -21,6 +21,10 @@ if(isset($_POST['reg'])){
             <?php
             $valido = "incorrecto";
         }
+        }else {
+            ?>
+            <h3 class="bad">llenar todos los datos</h3>
+            <?php
     }
 }
 
