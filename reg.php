@@ -33,7 +33,6 @@ if(isset($_POST['reg'])){
     <title>Validado</title>
 </head>
 <body>
-    <h3 class="ok"><?php $valido ?></h3>
     
 </body>
 </html>
