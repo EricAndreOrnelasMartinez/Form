@@ -9,6 +9,7 @@ if(isset($_POST['reg'])){
         $consulta = "INSERT INTO Info(Nombre,Email) VALUES('$nombre', '$mail')";
         $resultado = mysqli_query($con,$consulta);
         $valido = "";
+        echo $valido;
         if($resultado){
             ?>
             <h3 class="ok">registrado!!!!</h3>
@@ -33,6 +34,5 @@ if(isset($_POST['reg'])){
     <title>Validado</title>
 </head>
 <body>
-    
 </body>
 </html>
