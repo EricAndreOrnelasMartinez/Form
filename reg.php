@@ -1,5 +1,11 @@
 <?php 
 
-echo "esto es php";
+include("db.php");
+
+if($con){
+    echo "it works!!";
+}else{
+    echo "sorry :(";
+}
 
 ?>
