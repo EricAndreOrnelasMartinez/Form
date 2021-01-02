@@ -2,10 +2,22 @@
 
 include("db.php");
 
-if($con){
-    echo "it works!!";
-}else{
-    echo "sorry :(";
+if(isset($_POST['reg'])){
+    if(strlen($_POST['nombre']) > 1 && strlen($_POST['mail']) > 1){
+        $nombre = trim($_POST['nombre']);
+        $mail = trim($_POST['mail']);
+        $consulta = "INSERT INTO Info(Nombre,Email) VALUES($nombre, $mail)";
+        $resultado = mysqli_query($con,$consulta);
+        if($resultado){
+            ?>
+            <h3>registrado!!!!</h3>
+            <?php
+        }else {
+            ?>
+            <h3>algo salió mal :(</h3>
+            <?php
+        }
+    }
 }
 
 ?>
