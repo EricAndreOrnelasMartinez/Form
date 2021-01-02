@@ -47,7 +47,7 @@ if(isset($_POST['reg'])){
         <?php 
         $sql = "SELECT * FROM Info";
         $ack = mysqli_query($con, $sql);
-        while($mostrar =mysqli_fetch_array($resultado)){
+        while($mostrar =mysqli_fetch_array($ack)){
         ?>
         <tr>
         <td><?php echo $mostrar['ID'] ?></td>
