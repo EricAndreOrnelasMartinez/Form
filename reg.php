@@ -12,12 +12,10 @@ if(isset($_POST['reg'])){
         if($resultado){
             ?>
             <h3 class="ok">registrado!!!!</h3>
-            $valido = "Correcto!!";
             <?php
         }else {
             ?>
             <h3 class="bad">algo salió mal :(</h3>
-            $valido = "incorrecto "";
             <?php
         }
     }
