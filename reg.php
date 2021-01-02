@@ -10,14 +10,8 @@ if(isset($_POST['reg'])){
         $resultado = mysqli_query($con,$consulta);
         $valido = "";
         if($resultado){
-            ?>
-            <h3 class="ok">registrado!!!!</h3>
-            <?php
             $valido = "correcto";
         }else {
-            ?>
-            <h3 class="bad">algo salió mal :(</h3>
-            <?php
             $valido = "incorrecto";
         }
     }
