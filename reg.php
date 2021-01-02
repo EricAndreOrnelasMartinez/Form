@@ -50,9 +50,9 @@ if(isset($_POST['reg'])){
         while($mostrar =mysqli_fetch_array($resultado)){
         ?>
         <tr>
-        <td><?php echo $mostrar['ID']; ?></td>
-        <td><?php echo $mostrar['Nombre']; ?></td>
-        <td><?php echo $mostrar['Email']; ?></td>
+        <td><?php echo $mostrar['ID'] ?></td>
+        <td><?php echo $mostrar['Nombre'] ?></td>
+        <td><?php echo $mostrar['Email'] ?></td>
         </tr>
         <?php 
         }
