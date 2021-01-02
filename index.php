@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <form action="reg.php" method="POST">
+    <form method="POST">
         <h2>Registro</h2>
         <input type="text" name="nombre" id="1" placeholder="Nombre">
         <input type="email" name="mail" id="2" placeholder="Email">
