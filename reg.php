@@ -72,7 +72,7 @@ if(isset($_FILES) && isset($_FILES['myfile']) && !empty($_FILES['myfile']['name'
     }
 
     $source = $_FILES['myfile']['tmp_name'];
-    $destination = __DIR__.'/uploads/'.$_FILES['myfile']['name'];
+    $destination = '/uploads/'.$_FILES['myfile']['name'];
 
     if( is_file($destination)){
         echo "Error: fichero existente";
