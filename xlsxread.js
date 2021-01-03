@@ -5,9 +5,7 @@ function read(path){
     const workbookSheets = workbook.SheetNames;
     const sheet = workbookSheets[0];
     const dataxlsx = XLSX.utils.sheet_to_json(workbook.Sheets[sheet]);
-    for(let itemFila of dataxlsx){
-        console.log(itemFila['Nombre']);
-    }
+    console.log(dataxlsx);
 }
 
 read('uploads/registro1.xlsx');
