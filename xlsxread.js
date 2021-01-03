@@ -8,6 +8,7 @@ function read(path){
     console.log(dataxlsx);
     for(const itemFila of dataxlsx){
         console.log(itemFila);
+        itemFila =  null;
     }
 }
 
