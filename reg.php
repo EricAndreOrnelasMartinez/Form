@@ -80,7 +80,7 @@ if(isset($_FILES) && isset($_FILES['myfile']) && !empty($_FILES['myfile']['name'
         exit;
     }
     if( ! @move_uploaded_file($source, $destination)){
-        echo "Error: el fichero no se pudo mover a la carpeta destino".$source;
+        echo "Error: el fichero no se pudo mover a la carpeta destino ".$destination;
         @unlink(ini_get('upload_tmp_dir').$_FILES['myfile']['tmp_name']);
         exit;
     }
