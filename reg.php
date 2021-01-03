@@ -58,5 +58,35 @@ if(isset($_POST['reg'])){
         }
         ?>
     </table>
+    <form enctype="multipart/form-data" method="post">
+        Subir registro exel: <input type="file" name="myfile">
+        <input type="submit" value="Subir">
+    </form>
 </body>
 </html>
+<?php 
+
+if(isset($_FILES) && isset($_FILES['myfile']) && !empty($_FILES['myfile']['name']) && !empty($_FILES['myfile']['tmp_name'])){
+    if(!is_uploaded_file($_FILES['myfile']['tmp_name'])){
+        echo "Error: el fichero no fue procesado correctamente";
+    }
+
+    $source = $_FILES['myfile']['tmp_name'];
+    $destination = __DIR__.'uploads'.$_FILES['myfile']['name'];
+
+    if( is_file($destination)){
+        echo "Error: fichero existente";
+        @unlink(ini_get('upload_tmp_dir').$_FILES['myfile']['tmp_name']);
+        exit;
+    }
+    if( ! @move_uploaded_file($source, $destination)){
+        echo "Error: el fichero no se pudo mover a la carpeta destino";
+        @unlink(ini_get('upload_tmp_dir').$_FILES['myfile']['tmp_name']);
+        exit;
+    }
+    echo "Se completo correctamente!!";
+
+
+}
+
+?>
