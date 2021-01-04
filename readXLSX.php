@@ -1,7 +1,7 @@
 <?php 
 
 require 'Classes/PHPExel/IOFactory.php';
-include('db.php');
+require 'db.php';
 
 function readAndC($nameF){
 $file  = __DIR__.'/uploads/'.$nameF;
@@ -14,7 +14,7 @@ for($i = 1; $i <= $nRows; $i++){
     $Email = $obreader->getActiveSeet()->getCell('B'.$i)->getCalculatedValue();
 
     $sql = "INSERT INTO Info(Nombre,Email) VALUES('$nameP','$Email')";
-    $rmysql = mysqli_query($con,$sql);
+    $rmysql = $mysqli->query($sql);
     if($rmysql){
         echo "capturado!!";
     }else{
