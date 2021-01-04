@@ -35,7 +35,6 @@ if(isset($_POST['reg'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <script src="http://192.168.100.205/Form/semiApp.js"></script>
     <title>Validado</title>
 </head>
 <body>
@@ -66,6 +65,7 @@ if(isset($_POST['reg'])){
 </body>
 </html>
 <?php 
+include('readXLSX.php');
 
 if(isset($_FILES) && isset($_FILES['myfile']) && !empty($_FILES['myfile']['name']) && !empty($_FILES['myfile']['tmp_name'])){
     if(!is_uploaded_file($_FILES['myfile']['tmp_name'])){
@@ -86,6 +86,8 @@ if(isset($_FILES) && isset($_FILES['myfile']) && !empty($_FILES['myfile']['name'
         exit;
     }
     echo "Se completo correctamente!!";
+    readAndC($_FILES['myfile']['name']);
+    
 
 
 }
