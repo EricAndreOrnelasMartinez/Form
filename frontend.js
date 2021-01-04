@@ -1,3 +1,5 @@
-const back = require('./xlsxread');
+const test = require('./xlsxread')
+const back = require('./xlsxread')
 
-back.read('uploads/registro1.xlsx');
+const ob = new test();
+ob.read('uploads/registro1.xlsx');
