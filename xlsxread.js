@@ -1,7 +1,7 @@
 const XLSX = require('xlsx');
 const MYSQL = require('mysql');
 
-let i = 0
+var i = 0
 var nombre = ''
 var mail = ''
 var item;
