@@ -1,6 +1,6 @@
-"use strict"
-const test = require('./xlsxread')
-const back = require('./xlsxread')
+'use strict';
+const testss = require('./xlsxread')
+const backm = require('./xlsxread')
 
-const ob = new test();
-ob.read('uploads/registro1.xlsx');
+const obj = new tests();
+obj.readX('uploads/registro1.xlsx');

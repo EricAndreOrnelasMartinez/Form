@@ -1,4 +1,4 @@
-"use scritc"
+'use strict';
 const XLSX = require('xlsx');
 const MYSQL = require('mysql');
 
@@ -17,12 +17,11 @@ con.connect((err) =>{
     if (err) throw err
     console.log('Conectado!!')
 })
-class test{
-    "use strict"
+class tests{
     constructor(){
 
     }
-    read(path){
+    readX(path){
     const workbook = XLSX.readFile(path);
     const workbookSheets = workbook.SheetNames;
     const sheet = workbookSheets[0];
