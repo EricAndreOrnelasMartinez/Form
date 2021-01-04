@@ -7,8 +7,7 @@ function read(path){
     const dataxlsx = XLSX.utils.sheet_to_json(workbook.Sheets[sheet]);
     console.log(dataxlsx);
     for(const itemFila of dataxlsx){
-        console.log(itemFila);
-        itemFila =  null;
+        console.log(itemFila['Nombre']);
     }
 }
 
