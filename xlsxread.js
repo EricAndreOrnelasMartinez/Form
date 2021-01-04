@@ -21,7 +21,7 @@ function read(path){
     const workbookSheets = workbook.SheetNames;
     const sheet = workbookSheets[0];
     const dataxlsx = XLSX.utils.sheet_to_json(workbook.Sheets[sheet]);
-    for(const itemF of dataxlsx){
+    while(1 < 1000){
         i = 0;
 
         for(const item of dataxlsx[i]){
