@@ -25,9 +25,9 @@ function read(path){
     while(i < 20){
 
         for(const itemF of dataxlsx){
-            item = dataxlsx[i];
-            nombre = item['Nombre']
-            mail = item['Mail']
+            console.log(dataxlsx[i]);
+            nombre = itemF['Nombre']
+            mail = itemF['Mail']
             //console.log(dataxlsx[i])
             con.query("INSERT INTO Info(Nombre,Email) VALUES('" + nombre + "','" + mail +"');", (error,rows) =>{
                 if (error) console.log(error);
