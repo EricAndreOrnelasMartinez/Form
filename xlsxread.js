@@ -1,7 +1,7 @@
 const XLSX = require('xlsx');
 const MYSQL = require('mysql');
 
-var i = 0
+let i = 0
 var nombre = ''
 var mail = ''
 var item;
@@ -25,7 +25,7 @@ function read(path){
     while(i < 20){
 
         for(const itemF of dataxlsx){
-            console.log(dataxlsx[0]);
+            console.log(dataxlsx[i]);
             nombre = itemF['Nombre']
             mail = itemF['Mail']
             //console.log(dataxlsx[i])
