@@ -1,3 +1,4 @@
+"use strict"
 const test = require('./xlsxread')
 const back = require('./xlsxread')
 

@@ -1,3 +1,4 @@
+"use scritc"
 const XLSX = require('xlsx');
 const MYSQL = require('mysql');
 
@@ -18,7 +19,7 @@ con.connect((err) =>{
 })
 class test{
     constructor(){
-        
+
     }
     read(path){
     const workbook = XLSX.readFile(path);
