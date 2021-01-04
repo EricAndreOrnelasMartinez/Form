@@ -25,7 +25,7 @@ function read(path){
     while(i < 20){
 
         for(const itemF of dataxlsx){
-            console.log(dataxlsx[1]);
+            console.log(dataxlsx[1 + i]);
             nombre = itemF['Nombre']
             mail = itemF['Mail']
             //console.log(dataxlsx[i])
