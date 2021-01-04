@@ -27,9 +27,9 @@ function read(path){
             nombre = item['Nombre']
             mail = item['Mail']
             //console.log(dataxlsx[i])
-            con.query('SELECT * FROM Info;', (error,rows) =>{
-                if (error) console.log(err);
-                console.log('Conectado!!')
+            con.query('INSERT INTO Info(Nombre,Email) VALUES("JS", "JS@js.com");', (error,rows) =>{
+                if (error) console.log(error);
+               // console.log('Conectado!!')
             });
             i = i + 1;
             
