@@ -1,7 +1,9 @@
 const XLSX = require('xlsx');
 const MYSQL = require('mysql');
 
-
+let i = 0
+let nombre = ''
+let mail = ''
 const con = MYSQL.createConnection({
     host: 'localhost',
     user: 'root',
@@ -19,9 +21,6 @@ function read(path){
     const workbookSheets = workbook.SheetNames;
     const sheet = workbookSheets[0];
     const dataxlsx = XLSX.utils.sheet_to_json(workbook.Sheets[sheet]);
-    let i = 0
-    let nombre = ''
-    let mail = ''
     for(const itemF of dataxlsx){
         i = 0;
 
