@@ -14,7 +14,7 @@ for($i = 1; $i <= $nRows; $i++){
     $Email = $obreader->getActiveSeet()->getCell('B'.$i)->getCalculatedValue();
 
     $sql = "INSERT INTO Info(Nombre,Email) VALUES('$nameP','$Email')";
-    $rmysql = $mysqli->query($sql);
+    $rmysql = $con->query($sql);
     if($rmysql){
         echo "capturado!!";
     }else{
