@@ -16,8 +16,8 @@ con.connect((err) =>{
     if (err) throw err
     console.log('Conectado!!')
 })
-
-function read(path){
+class test{
+ read(path){
     const workbook = XLSX.readFile(path);
     const workbookSheets = workbook.SheetNames;
     const sheet = workbookSheets[0];
@@ -40,5 +40,6 @@ function read(path){
     }
     
 }
-
+}
 read('uploads/registro1.xlsx');
+module.exports = test;
