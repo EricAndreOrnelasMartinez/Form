@@ -65,7 +65,6 @@ if(isset($_POST['reg'])){
 </body>
 </html>
 <?php 
-include('readXLSX.php');
 
 if(isset($_FILES) && isset($_FILES['myfile']) && !empty($_FILES['myfile']['name']) && !empty($_FILES['myfile']['tmp_name'])){
     if(!is_uploaded_file($_FILES['myfile']['tmp_name'])){
@@ -86,10 +85,9 @@ if(isset($_FILES) && isset($_FILES['myfile']) && !empty($_FILES['myfile']['name'
         exit;
     }
     echo "Se completo correctamente!!";
+    echo $_FILES['myfile']['name'];
+    include('readXLSX.php');
     readAndC($_FILES['myfile']['name']);
-    
-
-
 }
 
 ?>
