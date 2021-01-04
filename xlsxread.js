@@ -18,6 +18,7 @@ con.connect((err) =>{
     console.log('Conectado!!')
 })
 class test{
+    "use strict"
     constructor(){
 
     }
