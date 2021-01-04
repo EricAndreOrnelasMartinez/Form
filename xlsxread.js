@@ -45,5 +45,4 @@ class tests{
     
 }
 }
-read('uploads/registro1.xlsx');
 module.exports = test;
