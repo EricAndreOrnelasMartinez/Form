@@ -1,4 +1,5 @@
 const XLSX = require('xlsx');
+const MYSQL = require('mysql');
 
 function read(path){
     const workbook = XLSX.readFile(path);
@@ -12,3 +13,15 @@ function read(path){
 }
 
 read('uploads/registro1.xlsx');
+
+const con = MYSQL.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'Lasric.2018',
+    database: 'Minmer'
+})
+
+con.connect((err) =>{
+    if (err) throw err
+    console.log('Conectado!!')
+})
