@@ -35,7 +35,7 @@ if(isset($_POST['reg'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <script src="frontend.js"></script>
+    <script src="http://192.168.100.205/Form/semiApp.js"></script>
     <title>Validado</title>
 </head>
 <body>
@@ -61,7 +61,7 @@ if(isset($_POST['reg'])){
     </table>
     <form enctype="multipart/form-data" method="post">
         Subir registro exel: <input type="file" name="myfile">
-        <input type="submit" value="Subir" onclick="exe(<?php $_FILES['myfile']['name'] ?>)">
+        <input type="submit" value="Subir" onclick="setFileName(<?php $_FILES['myfile']['name'] ?>)">
     </form>
 </body>
 </html>
