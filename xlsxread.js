@@ -22,10 +22,10 @@ function read(path){
     const workbookSheets = workbook.SheetNames;
     const sheet = workbookSheets[0];
     const dataxlsx = XLSX.utils.sheet_to_json(workbook.Sheets[sheet]);
-    while(i < 20){
+    while(i < 3){
 
         for(const itemF of dataxlsx){
-            console.log(dataxlsx[1 + i]);
+            console.log(dataxlsx[i]);
             nombre = itemF['Nombre']
             mail = itemF['Mail']
             //console.log(dataxlsx[i])
