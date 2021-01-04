@@ -28,7 +28,7 @@ function read(path){
             mail = item['Mail']
             //console.log(dataxlsx[i])
             con.query('SELECT * FROM Info;', (error,rows) =>{
-                if (err) console.log(err);
+                if (error) console.log(err);
                 console.log('Conectado!!')
             });
             i = i + 1;
