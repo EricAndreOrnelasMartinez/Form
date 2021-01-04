@@ -21,15 +21,15 @@ function read(path){
     const workbookSheets = workbook.SheetNames;
     const sheet = workbookSheets[0];
     const dataxlsx = XLSX.utils.sheet_to_json(workbook.Sheets[sheet]);
-    while(i < 100){
+    while(i < 20){
 
         for(const item of dataxlsx){
             nombre = item['Nombre']
             mail = item['Mail']
             //console.log(dataxlsx[i])
-            con.query('INSERT INTO Info(Nombre,Email) VALUES("JS", "JS@js.com");', (error,rows) =>{
+            con.query("INSERT INTO Info(Nombre,Email) VALUES('" + nombre + "','" + mail +"');", (error,rows) =>{
                 if (error) console.log(error);
-               // console.log('Conectado!!')
+               console.log('Capturado!!')
             });
             i = i + 1;
             
