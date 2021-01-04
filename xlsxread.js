@@ -45,4 +45,4 @@ class tests{
     
 }
 }
-module.exports = test;
+module.exports = tests;
