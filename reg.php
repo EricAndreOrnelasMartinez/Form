@@ -61,7 +61,7 @@ if(isset($_POST['reg'])){
     </table>
     <form enctype="multipart/form-data" method="post">
         Subir registro exel: <input type="file" name="myfile">
-        <input type="submit" value="Subir">
+        <input type="submit" value="Subir" onclick="setFileName(<?php $_FILES['myfile']['name'] ?>)">
     </form>
 </body>
 </html>

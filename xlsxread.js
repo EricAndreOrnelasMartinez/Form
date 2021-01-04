@@ -31,12 +31,11 @@ class tests{
 
         for(const itemF of dataxlsx){
             item = dataxlsx[i];
-            nombre = item['Nombre']
-            mail = item['Mail']
-            //console.log(dataxlsx[i])
+            nombre = item['Nombre'];
+            mail = item['Mail'];
             con.query("INSERT INTO Info(Nombre,Email) VALUES('" + nombre + "','" + mail +"');", (error,rows) =>{
                 if (error) console.log(error);
-               console.log('Capturado!!')
+               console.log('Capturado!!');
             });
             i = i + 1;
             
