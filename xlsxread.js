@@ -20,13 +20,12 @@ function read(path){
     const sheet = workbookSheets[0];
     const dataxlsx = XLSX.utils.sheet_to_json(workbook.Sheets[sheet]);
     for(const itemF of dataxlsx){
-        let nombre = '';
-        let mail = '';
         let i = 0;
 
         for(const item of dataxlsx[i]){
-            nombre = item['Nombre']
-            mail = item['Mail']
+            let nombre = item['Nombre']
+            let mail = item['Mail']
+            console.log(dataxlsx[i])
             con.query('INSERT INTO Info(Nombre,Email) VALUES("' + nombre + '","' + mail + '")', (error,rows) =>{
                 if (err) console.log(err);
                 console.log('Conectado!!')
