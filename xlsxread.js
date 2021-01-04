@@ -1,9 +1,9 @@
 const XLSX = require('xlsx');
 const MYSQL = require('mysql');
 
-let i = 0
-let nombre = ''
-let mail = ''
+var i = 0
+var nombre = ''
+var mail = ''
 const con = MYSQL.createConnection({
     host: 'localhost',
     user: 'root',
