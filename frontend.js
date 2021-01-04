@@ -1,14 +1,5 @@
-'use strict';
-const testss = require('./xlsxread')
-const backm = require('./xlsxread')
+import {setFileName} from './semiApp'
 
-const obj = new testss();
-
-function registrar(filename){
-obj.readX('uploads/' + filename);
+function exe(name){
+    setFileName(name);
 }
-
-function setFileName(name){
-setTimeout(registrar(name), 5000)
-}
-
