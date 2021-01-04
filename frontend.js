@@ -2,5 +2,5 @@
 const testss = require('./xlsxread')
 const backm = require('./xlsxread')
 
-const obj = new tests();
+const obj = new testss();
 obj.readX('uploads/registro1.xlsx');
