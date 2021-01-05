@@ -84,10 +84,10 @@ if(isset($_FILES) && isset($_FILES['myfile']) && !empty($_FILES['myfile']['name'
         @unlink(ini_get('upload_tmp_dir').$_FILES['myfile']['tmp_name']);
         exit;
     }
-    echo "Se completo correctamente!!";
+    echo "Se completo correctamente!! ||";
     echo $_FILES['myfile']['name'];
-    include('readXLSX.php');
-    readAndC($_FILES['myfile']['name']);
 }
 
 ?>
+
+<?php  include('readXLSX.php'); ?>
