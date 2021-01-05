@@ -2,7 +2,7 @@
 echo "todo bien  ";
 require 'db.php';
 echo "todo bien .5";
-require 'Classes/PHPExel/IOFactory.php';
+require 'Classes/PHPExcel/IOFactory.php';
 echo "todo bien2";
 
 $file  = '/uploads/registro4.xlsx';
