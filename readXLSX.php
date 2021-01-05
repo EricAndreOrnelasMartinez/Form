@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors','1');
 //echo "todo bien  ";
-include('db.php');
+$con = mysqli_connect("localhost","root","Lasric.2018","Minmer");
 //echo "todo bien .5";
 require 'Classes/PHPExcel/IOFactory.php';
 //echo "todo bien2";
