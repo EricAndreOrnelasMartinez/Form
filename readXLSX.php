@@ -2,11 +2,11 @@
 error_reporting(E_ALL);
 ini_set('display_errors','1');
 //echo "todo bien  ";
-$con = mysqli_connect("localhost","root","Lasric.2018","Minmer");
 //echo "todo bien .5";
 require 'Classes/PHPExcel/IOFactory.php';
 //echo "todo bien2";
 function readAndC($fileU){
+$con = mysqli_connect("localhost","root","Lasric.2018","Minmer");
 $fileName = "/var/www/html/Form/uploads/".$fileU;
 $obReader = PHPExcel_IOFactory::load($fileName); 
 //echo "todo bien 2.5";
