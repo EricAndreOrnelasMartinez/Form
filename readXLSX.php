@@ -12,7 +12,8 @@ $inputFileType = PHPExcel_IOFactory::identify($fileName);
 $obReader = PHPExcel_IOFactory::createReader($inputFileType);
 $obPHPExcel = $obReader->load($fileName); 
 echo "todo bien 2.5";
-$obPHPExcel->setActiveShetIndex(0);
+$obReader->setActiveShetIndex(0);
+echo "todo bien 2.7";
 $nRows = $obPHPExcel->setActiveSheetIndex(0)->getHighestRow();
 echo "todo bien 3";
 for($i = 1; $i <= $nRows; $i++){
