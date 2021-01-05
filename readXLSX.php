@@ -1,8 +1,8 @@
 <?php 
-echo "todo bien";
-require 'Classes/PHPExel/IOFactory.php';
-echo "todo bien .5";
+echo "todo bien  ";
 require 'db.php';
+echo "todo bien .5";
+require 'Classes/PHPExel/IOFactory.php';
 echo "todo bien2";
 
 $file  = '/uploads/registro4.xlsx';
