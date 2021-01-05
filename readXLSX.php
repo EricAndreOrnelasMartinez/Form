@@ -8,9 +8,7 @@ require 'Classes/PHPExcel/IOFactory.php';
 echo "todo bien2";
 
 $fileName = "/var/www/html/Form/uploads/registro4.xlsx";
-$inputFileType = PHPExcel_IOFactory::identify($fileName);
-$obReader = PHPExcel_IOFactory::createReader($inputFileType);
-$obPHPExcel = $obReader->load($fileName); 
+$obReader = PHPExcel_IOFactory::load($fileName); 
 echo "todo bien 2.5";
 $obReader->setActiveShetIndex(0);
 echo "todo bien 2.7";
