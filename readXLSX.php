@@ -1,7 +1,7 @@
 <?php 
 echo "todo bien";
-echo "todo bien .5";
 require 'Classes/PHPExel/IOFactory.php';
+echo "todo bien .5";
 require 'db.php';
 echo "todo bien2";
 
