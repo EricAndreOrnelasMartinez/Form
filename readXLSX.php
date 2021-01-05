@@ -6,7 +6,7 @@ require 'Classes/PHPExcel/IOFactory.php';
 echo "todo bien2";
 
 $fileName  = './registro4.xlsx';
-
+echo $fileName;
 $obreader = PHPEXCEL_IOFactory::load($fileName);
 echo "todo bien 2.5";
 $obreader->setActiveShetIndex(0);
