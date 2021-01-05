@@ -5,7 +5,7 @@ echo "todo bien .5";
 require 'Classes/PHPExcel/IOFactory.php';
 echo "todo bien2";
 
-$file  = './uploads/registro4.xlsx';
+$file  = 'uploads/registro4.xlsx';
 
 $obreader = PHPExcel_IOFactory::load($file);
 echo "todo bien 2.5";
