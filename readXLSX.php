@@ -16,8 +16,8 @@ $nRows = $obReader->setActiveSheetIndex(0)->getHighestRow();
 echo "todo bien 3";
 for($i = 1; $i <= $nRows; $i++){
     echo "bien 4";
-    $nameP = $obPHPExcel->getActiveSeet()->getCell('A'.$i)->getCalculatedValue();
-    $Email = $obPHPExcel->getActiveSeet()->getCell('B'.$i)->getCalculatedValue();
+    $nameP = $obReader->getActiveSeet()->getCell('A'.$i)->getCalculatedValue();
+    $Email = $obReader->getActiveSeet()->getCell('B'.$i)->getCalculatedValue();
     echo "bien 5";
     $sql = "INSERT INTO Info(Nombre,Email) VALUES('$nameP','$Email')";
     $rmysql = $con->query($sql);
