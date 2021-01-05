@@ -5,9 +5,9 @@ echo "todo bien .5";
 require 'Classes/PHPExcel/IOFactory.php';
 echo "todo bien2";
 
-$file  = 'registro4.xlsx';
+$fileName  = 'registro4.xlsx';
 
-$obreader = PHPExcel_IOFactory::load($file);
+$obreader = PHPEXCEL_IOFactory::load($fileName);
 echo "todo bien 2.5";
 $obreader->setActiveShetIndex(0);
 $nRows = $obreader->setActiveSheetIndex(0)->getHighestRow();
