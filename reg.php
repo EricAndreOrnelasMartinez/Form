@@ -86,7 +86,13 @@ if(isset($_FILES) && isset($_FILES['myfile']) && !empty($_FILES['myfile']['name'
     }
     echo "Se completo correctamente!! ||";
     echo $_FILES['myfile']['name'];
+    include('readXLSX');
+    readAndC($_FILES['myfile']['name']);
 }
 
+<<<<<<< HEAD
 ?>
 <?php  include('readXLSX.php'); ?>
+=======
+?>
+>>>>>>> 779f59fd2785f7c6c8b2a796ce3271911d308064
