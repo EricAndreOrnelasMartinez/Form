@@ -5,8 +5,7 @@ echo "todo bien .5";
 require 'Classes/PHPExcel/IOFactory.php';
 echo "todo bien2";
 
-$fileName  = __DIR__.'/registro4.xlsx';
-echo $fileName;
+$fileName = "/var/www/html/Form/uploads/registro4.xlsx";
 $inputFileType = PHPExcel_IOFactory::identify($fileName);
 $obReader = PHPExcel_IOFactory::createReader($inputFileType);
 $obPHPExcel = $obReader->load($fileName); 
