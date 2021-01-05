@@ -64,7 +64,6 @@ if(isset($_POST['reg'])){
     </form>
 </body>
 </html>
-<?php  include('readXLSX.php'); ?>
 <?php 
 
 if(isset($_FILES) && isset($_FILES['myfile']) && !empty($_FILES['myfile']['name']) && !empty($_FILES['myfile']['tmp_name'])){
@@ -90,3 +89,4 @@ if(isset($_FILES) && isset($_FILES['myfile']) && !empty($_FILES['myfile']['name'
 }
 
 ?>
+<?php  include('readXLSX.php'); ?>
