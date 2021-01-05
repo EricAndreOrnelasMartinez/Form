@@ -20,7 +20,7 @@ for($i = 2; $i <= $nRows; $i++){
     $Email = $obReader->getActiveSheet()->getCell('B'.$i)->getCalculatedValue();
     //echo "bien 5";
     $sql = "INSERT INTO Info(Nombre,Email) VALUES('$nameP','$Email')";
-    $rmysql = $con->query($sql);
+    $rmysql = mysqli_query($con, $sql);
     if($rmysql){
         echo "capturado!!";
     }else{
