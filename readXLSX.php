@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors','1');
 //echo "todo bien  ";
-require 'db.php';
+include('db.php');
 //echo "todo bien .5";
 require 'Classes/PHPExcel/IOFactory.php';
 //echo "todo bien2";
