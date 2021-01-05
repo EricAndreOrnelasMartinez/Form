@@ -7,7 +7,9 @@ echo "todo bien2";
 
 $fileName  = __DIR__.'/registro4.xlsx';
 echo $fileName;
-$obreader = PHPExcel_IOFactory::load($fileName);
+$inputFileType = PHPExcel_IOFactory::identify($fileName);
+$obReader = PHPExcel_IOFactory::createReader($inputFileType);
+$obPHPExcel = $obReader->load($fileName); 
 echo "todo bien 2.5";
 $obreader->setActiveShetIndex(0);
 $nRows = $obreader->setActiveSheetIndex(0)->getHighestRow();
